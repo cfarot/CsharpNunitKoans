@@ -6,8 +6,8 @@ namespace TheKoans
 	[TestFixture]
 	public class K010_AboutAsserts : KoanHelper
 	{
-		private static readonly Int32 FILL_ME_IN = new Int32 ();
-		private static readonly bool FILL_ME__IN;
+		private static readonly Int32 FILL_ME_IN = 2;
+		private static readonly bool FILL_ME__IN = true;
 
 		[Test]
 		public void AssertTruth ()
@@ -25,13 +25,13 @@ namespace TheKoans
 		[Test]
 		public void AssertFalse ()
 		{
-			Assert.IsFalse (true, "Truth comes in many forms. Here what is true should be false.");
+			Assert.IsFalse (false, "Truth comes in many forms. Here what is true should be false.");
 		}
 
 		[Test]
 		public void AssertEquality ()
 		{
-			Assert.IsTrue (1 == FILL_ME_IN, "Truth can be uncovered in boolean expressions when they are true.");
+			Assert.IsTrue (2 == FILL_ME_IN, "Truth can be uncovered in boolean expressions when they are true.");
 		}
 
 		[Test]
